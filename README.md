@@ -18,6 +18,6 @@ Play full audio with custom interval<br>
 `python stretchBreak.py -t full -i 30`<br>
 
 ### Fine print
-The code should work with Python 3.x versions (Python 3.6 or newer recommended). The main modules used are all part of Python's standard library (time, argparse, datetime, os, platform, subprocess).<br>
+The code should work with Python 3.x versions (Python 3.6 or newer recommended). The main modules used are all part of Python's standard library (time, argparse, datetime, os, platform, subprocess). You may need to specify `python3 strechBreak.py` to run the code.<br>
 
 Mickey Mouse FunHouse is property of Disney Enterprises, Inc.<br>
