@@ -1,6 +1,6 @@
 # Stretch Break
 
-![disney.fandom.com/wiki/Mickey_Mouse_Funhouse](/Users/neasci/Documents/bradburdLab/stretchBreak/Mickey_and_Minnie_Mickey_Mouse_Funhouse.png)
+![](C:/Users/neasci/Documents/bradburdLab/stretchBreak/Mickey_and_Minnie_Mickey_Mouse_Funhouse.png "Mickey and Minnie")
 
 Let Mickey and friends remind you to take a  Stretch Break!
 
