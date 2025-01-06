@@ -1,6 +1,7 @@
 # Stretch Break
 
-![](C:/Users/neasci/Documents/bradburdLab/stretchBreak/Mickey_and_Minnie_Mickey_Mouse_Funhouse.png "Mickey and Minnie")
+![](/Users/neasci/Documents/bradburdLab/stretchBreak/Mickey_and_Minnie_Mickey_Mouse_Funhouse.png "Mickey and Minnie"){width=400 height=400} 
+
 
 Let Mickey and friends remind you to take a  Stretch Break!
 
