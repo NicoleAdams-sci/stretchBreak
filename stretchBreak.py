@@ -15,17 +15,20 @@ import os
 import platform
 import subprocess
 
-def get_player_command():
+def play_audio_file(audio_path, system):
     """
-    Returns the appropriate command to open files with default program based on OS
+    Plays an audio file using the appropriate command for the operating system
+    
+    Args:
+        audio_path (str): Path to the audio file
+        system (str): Operating system name
     """
-    system = platform.system()
     if system == 'Darwin':  # macOS
-        return ['open']
+        subprocess.run(['afplay', audio_path])
     elif system == 'Windows':
-        return ['start', '', '/wait']  # /wait makes it wait for completion
+        subprocess.run(f'start /wait "" "{audio_path}"', shell=True)
     else:  # Linux and others
-        return ['xdg-open']
+        subprocess.run(['xdg-open', audio_path])
 
 def play_audio_at_interval(interval_minutes, audio_type):
     """
@@ -55,9 +58,8 @@ def play_audio_at_interval(interval_minutes, audio_type):
         print(f"Error: Audio file not found: {audio_path}")
         exit(1)
     
-    # Get the appropriate command for the operating system
+    # Get the operating system
     system = platform.system()
-    player_command = get_player_command()
     
     try:
         while True:
@@ -71,16 +73,11 @@ def play_audio_at_interval(interval_minutes, audio_type):
             current_time = datetime.now().strftime("%H:%M:%S")
             print(f"[{current_time}] Playing {audio_type} audio...")
             
-            # Play the audio using system's default player
-            if system == 'Windows':
-                # For Windows, use shell=True
-                subprocess.run(f'start /wait "" "{audio_path}"', shell=True)
-            else:
-                # For macOS and Linux
-                subprocess.run(player_command + [audio_path])
-                
-                # Wait for the exact duration of the audio
-                time.sleep(audio_durations[audio_type])
+            # Play the audio using appropriate command
+            play_audio_file(audio_path, system)
+            
+            # Wait for the exact duration of the audio
+            time.sleep(audio_durations[audio_type])
             
     except KeyboardInterrupt:
         print("\nProgram stopped by user")
