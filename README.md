@@ -12,6 +12,9 @@ This python code will play the Stretch Break song audio from Mickey Mouse FunHou
 -t, --audio_type = choose from Stretch Break clip (short) or the full song (full) [default short]
 
 ## How to run Stretch Break?
+Download repo contents via Download ZIP on GitHub<br>
+Navigate to new directory<br>
+`cd stretchBreak`<br>
 Play short audio (default) with default interval (60 minutes)<br>
 `python stretchBreak.py`<br>
 Play full audio with custom interval<br>
