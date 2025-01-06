@@ -1,6 +1,6 @@
 # Stretch Break
 
-![](Mickey_and_Minnie_Mickey_Mouse_Funhouse.png "Mickey and Minnie"){width=400 height=400} 
+<img src="Mickey_and_Minnie_Mickey_Mouse_Funhouse.png" alt="Mickey and Minnie" width="400" height="400">
 
 Let Mickey and friends remind you to take a  Stretch Break!
 
