@@ -1,9 +1,9 @@
 ## To run this code:
-## Play short audio (default) with default interval (60 minutes)
+## Play full audio (default) with default interval (60 minutes)
 # python stretchBreak.py
-## Play full audio with default interval
-# python stretchBreak.py -t full
-## Play short audio with custom interval (e.g., 30 minutes)
+## Play short audio with default interval
+# python stretchBreak.py -t short
+## Play full audio with custom interval (e.g., 30 minutes)
 # python stretchBreak.py -i 30
 ## Play full audio with custom interval
 # python stretchBreak.py -t full -i 45
@@ -94,8 +94,8 @@ if __name__ == "__main__":
     parser.add_argument('-t', '--type',
                         type=str,
                         choices=['short', 'full'],
-                        default='short',
-                        help='Type of audio to play: short (2 sec) or full (2:10 min) version (default: short)')
+                        default='full',
+                        help='Type of audio to play: short (2 sec) or full (2:10 min) version (default: full)')
     
     # Parse arguments
     args = parser.parse_args()
